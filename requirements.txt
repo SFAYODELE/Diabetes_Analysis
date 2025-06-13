@@ -2,5 +2,5 @@ numpy==2.2.6
 matplotlib==3.10.3
 pandas==2.2.3
 scikit-learn==1.7.0
-seeborn==0.4.3
+seaborn==0.7.1
 streamlit==1.45.1
