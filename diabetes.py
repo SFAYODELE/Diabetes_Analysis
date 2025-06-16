@@ -10,3 +10,6 @@ df = pd.read_csv("diabetes_pyton.csv")
 
 st.markdown("## Overview")
 st.write(df.describe())
+
+st.markdown("## Data shape")
+st.write(df.shape)
