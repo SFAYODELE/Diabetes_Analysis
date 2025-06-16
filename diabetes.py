@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st 
 import matplotlib.pyplot as pt
 import numpy as np
+import plotly.express as px
 
 
 st.title("DIABETES ANALYSIS")
@@ -30,3 +31,9 @@ st.markdown("## Univariate Analysis")
 st.markdown("### Blood Pressure")
 
 st.write(df["BloodPressure"].describe())
+
+df_count = df['BloodPressure'].value_counts().reset_index
+df_count_column = ["Blood Pressure", "Count"]
+fig = px.bar(df_count, x = "Blood Pressure", y = "Count", title="Distribution of Blood Pressure")
+
+st.plotly_chart(fig, use_container_width=True)
