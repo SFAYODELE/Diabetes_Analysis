@@ -9,4 +9,4 @@ st.title("DIABETES ANALYSIS")
 df = pd.read_csv("diabetes_pyton.csv")
 
 st.markdown("## Overview")
-st.write(df.info)
+st.write(df.describe())
