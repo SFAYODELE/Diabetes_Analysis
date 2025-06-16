@@ -42,7 +42,7 @@ st.markdown("## Bivariate Analysis")
 
 st.markdown("### Blood Pressure vs Pregnancies")
 
-df2 = pd.DataFrame(df["BloodPressure"], df['pregnancies'])
+df2 = pd.DataFrame(df["BloodPressure"], df['Pregnancies'])
 st.write(df2)
 
 bp2 = px.histogram(df, x= "Pregnancies", y ='BloodPressure',title="Distribution of Pregnancies vs Blood Pressure")
