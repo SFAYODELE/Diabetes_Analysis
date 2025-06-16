@@ -33,6 +33,18 @@ st.markdown("### Blood Pressure")
 st.write(df["BloodPressure"].describe())
 
 
-bp = px.bar(df,x = 'Pregnancies', y ='BloodPressure',title="Distribution of Blood Pressure vs Pregnancies")
+bp = px.bar(df['BloodPressure'], y ='BloodPressure',title="Distribution of Blood Pressure")
 
 st.plotly_chart(bp, use_container_width=True)
+
+
+st.markdown("## Bivariate Analysis")
+
+st.markdown("### Blood Pressure vs Pregnancies")
+
+st.write(df["BloodPressure", "Pregnancies"].describe())
+
+
+bp2 = px.bar(df, x= "Pregnancies", y ='BloodPressure',title="Distribution of Pregnancies vs Blood Pressure")
+
+st.plotly_chart(bp2, use_container_width=True)
