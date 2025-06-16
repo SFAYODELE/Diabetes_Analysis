@@ -42,7 +42,7 @@ st.markdown("## Bivariate Analysis")
 
 st.markdown("### Blood Pressure vs Pregnancies")
 
-st.write(df["BloodPressure", "Pregnancies"].describe())
+
 
 
 bp2 = px.bar(df, x= "Pregnancies", y ='BloodPressure',title="Distribution of Pregnancies vs Blood Pressure")
