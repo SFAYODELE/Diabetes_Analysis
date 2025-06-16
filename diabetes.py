@@ -34,6 +34,6 @@ st.write(df["BloodPressure"].describe())
 
 df_count = df['BloodPressure'].value_counts().reset_index
 df_count_column = ["Blood Pressure", "Count"]
-fig = px.bar(df_count, x = "Blood Pressure", y = "Count", title="Distribution of Blood Pressure")
+fig = px.bar(df_count, x = "Blood Pressure", y ="Count",title="Distribution of Blood Pressure")
 
 st.plotly_chart(fig, use_container_width=True)
