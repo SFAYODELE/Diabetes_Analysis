@@ -45,6 +45,6 @@ st.markdown("### Blood Pressure vs Pregnancies")
 
 
 
-bp2 = px.bar(df, x= "Pregnancies", y ='BloodPressure',title="Distribution of Pregnancies vs Blood Pressure")
+bp2 = px.histogram(df, x= "Pregnancies", y ='BloodPressure',title="Distribution of Pregnancies vs Blood Pressure")
 
 st.plotly_chart(bp2, use_container_width=True)
