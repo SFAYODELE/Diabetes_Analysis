@@ -33,6 +33,6 @@ st.markdown("### Blood Pressure")
 st.write(df["BloodPressure"].describe())
 
 
-bp = px.bar(df['BloodPressure'], y ='BloodPressure',title="Distribution of Blood Pressure")
+bp = px.bar(df,x = 'Pregnancies', y ='BloodPressure',title="Distribution of Blood Pressure vs Pregnancies")
 
 st.plotly_chart(bp, use_container_width=True)
