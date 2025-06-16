@@ -24,3 +24,8 @@ st.write(df.describe())
 
 st.markdown("## Data shape")
 st.write(df.shape)
+
+st.markdown("## Univariate Analysis")
+
+st.markdown("### Blood Pressure")
+st.write(df["BloodPressure"].describe())
