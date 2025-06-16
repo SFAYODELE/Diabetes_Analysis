@@ -45,6 +45,6 @@ st.markdown("### Blood Pressure vs Pregnancies")
 df2 = pd.DataFrame(df["BloodPressure"], df['pregnancies'])
 st.write(df2)
 
-bp2 = px.histogram(df, x= "Pregnancies", y =df[]'BloodPressure',title="Distribution of Pregnancies vs Blood Pressure")
+bp2 = px.histogram(df, x= "Pregnancies", y ='BloodPressure',title="Distribution of Pregnancies vs Blood Pressure")
 
 st.plotly_chart(bp2, use_container_width=True)
